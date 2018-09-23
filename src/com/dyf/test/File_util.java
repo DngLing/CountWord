@@ -26,10 +26,7 @@ public class File_util {
 			for(File file:srcFile.listFiles())
 				getPath(file);
 		}
-		
-		
-		
+
 	}
-	 
-	
+
 }
