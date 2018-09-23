@@ -1,5 +1,10 @@
 package com.dyf.test;
-
+/**
+ * 该方法拥有
+ * 一个IO_util类的对象
+ * 一个Parser类的对象
+ * 该方法维持了一个FileInfo对象的引用
+ */
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -13,7 +18,12 @@ public class Count {
 		par = new Parser();
 		iou = new IO_util();
 	}
-	
+	/**
+	 * 该方法依赖IO_util对象和Parser对象的方法
+	 * 该方法将给引用的FileInfo对象的字段注入数据
+	 * @param srcPath	文件的绝对地址
+	 * @throws IOException
+	 */
 	public void getFileInfo(String srcPath) throws IOException{
 		ArrayList<String> list = null;
 		

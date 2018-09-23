@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class TestClient {
 
@@ -21,20 +22,20 @@ public class TestClient {
 				System.out.println(line);
 				System.out.println(info);
 			}
-			
-		
+				
 		}*/
 		
-		/*
+		
 		IO_util iou = new IO_util();
 		FileInfo info = new FileInfo();
 		Count cou = new Count(info);
 		cou.getFileInfo("E:/www/dir_1/code1.txt");
 		System.out.println(info);
 		iou.writeLine(info, "E:/www/dir_1");
-		*/
 		
 		
+		
+        
 		 
 		
 		

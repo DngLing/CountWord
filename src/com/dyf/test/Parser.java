@@ -33,7 +33,11 @@ public class Parser {
 		}
 		return num;
 	}
-	
+	/**
+	 * 该方法用于返回该String 的行数
+	 * @param str
+	 * @return
+	 */
 	public int getLinesNum(String str){
 		char[] chrs = str.toCharArray();
 		int num = 0;
@@ -44,6 +48,11 @@ public class Parser {
 		return num+1;
 	}
 
+	/**
+	 * 该方法用于返回str 中代注释行的行数
+	 * @param str
+	 * @return
+	 */
 	public int getCommtLineNum(ArrayList<String> str){
 		int num =0;
 		for(int i=0;i<str.size();i++){
@@ -54,7 +63,11 @@ public class Parser {
 		}
 		return num;
 	}
-
+	/**
+	 * 该方法用于返回一个boolean 判断当前行是否为注释行 
+	 * @param str
+	 * @return
+	 */
 	public boolean isCommtLine(String str){
 		boolean flag =false;
 		String temp = str.trim();
@@ -63,7 +76,11 @@ public class Parser {
 		}
 		return flag;
 	}
-	
+	/**
+	 * 该方法用于返回一个Boolean 判断当前行是否为空行
+	 * @param str
+	 * @return
+	 */
 	public boolean isEmptyLine(String str){
 		boolean flag = false;
 		if(this.getWordsNum(str)==0&&!this.isCommtLine(str)){

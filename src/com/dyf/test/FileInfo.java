@@ -1,5 +1,9 @@
 package com.dyf.test;
-
+/**
+ * 该类的对象保存一个文本文件的所有我们需要的信息
+ * @author ASUS
+ *
+ */
 public class FileInfo {
 	
 	private int wordsNum;
